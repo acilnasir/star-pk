@@ -1,0 +1,5 @@
+## Pages
+- [— STAR-PK](/dashboard): No description available
+- [Daftar Tugas — STAR-PK](/tugas): Kelola dan pantau seluruh tugas Pembimbingan Kemasyarakatan: status, progres, prioritas, dan tenggat.
+- [Profil — STAR-PK](/profil): Kelola profil Anda di STAR-PK: nama, jabatan, wilayah, dan unit kerja.
+- [Profil Institusi — STAR-PK](/institusi): Profil institusi Balai Pemasyarakatan, Kanwil, dan Direktorat Jenderal Pemasyarakatan beserta dasbor kinerjanya.

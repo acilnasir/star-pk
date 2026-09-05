@@ -1,0 +1,11 @@
+node_modules
+.env
+.env.*
+!.env.example
+apps/pocketbase/pb_data_local/
+.neon
+.vercel
+apps/pocketbase/pb_data/*.db-shm
+apps/pocketbase/pb_data/*.db-wal
+dist/
+vault/

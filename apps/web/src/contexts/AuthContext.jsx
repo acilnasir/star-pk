@@ -12,11 +12,9 @@ export const AuthProvider = ({ children }) => {
         () => ({
             user,
             isAuthed: pb.authStore.isValid,
-            login: (email, password) => pb.collection('users').authWithPassword(email, password),
+            login: (email, password) => pb.auth.login(email, password),
             signup: async (email, password, extraFields = {}) => {
-                await pb.collection('users').create({ email, password, passwordConfirm: password, ...extraFields });
-
-                return pb.collection('users').authWithPassword(email, password);
+                return pb.auth.signup({ email, password, ...extraFields });
             },
             logout: () => pb.authStore.clear(),
         }),

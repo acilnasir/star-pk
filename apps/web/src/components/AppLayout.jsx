@@ -69,13 +69,13 @@ export default function AppLayout() {
       'flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors',
       isActive
         ? 'bg-sidebar-accent text-sidebar-accent-foreground'
-        : 'text-sidebar-foreground/70 hover:bg-sidebar-accent/60 hover:text-sidebar-accent-foreground',
+        : 'text-sidebar-foreground hover:bg-sidebar-accent/60 hover:text-sidebar-accent-foreground',
     );
 
   return (
     <div className="min-h-[100dvh] bg-background">
       {/* Sidebar desktop */}
-      <aside className="fixed inset-y-0 left-0 z-30 hidden w-64 flex-col bg-sidebar-background md:flex">
+      <aside className="fixed inset-y-0 left-0 z-30 hidden w-64 flex-col bg-sidebar md:flex">
         <div className="border-b border-sidebar-border px-5 py-5">
           <Brand />
         </div>
@@ -104,7 +104,7 @@ export default function AppLayout() {
           </div>
           <button
             onClick={handleLogout}
-            className="flex w-full items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-sidebar-foreground/70 transition-colors hover:bg-sidebar-accent/60 hover:text-sidebar-accent-foreground"
+            className="flex w-full items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-sidebar-foreground transition-colors hover:bg-sidebar-accent/60 hover:text-sidebar-accent-foreground"
           >
             <LogOut className="h-4 w-4" strokeWidth={2.2} />
             Keluar
@@ -113,7 +113,7 @@ export default function AppLayout() {
       </aside>
 
       {/* Bilah atas mobile */}
-      <header className="sticky top-0 z-30 flex items-center justify-between gap-3 border-b border-sidebar-border bg-sidebar-background px-4 py-3 md:hidden">
+      <header className="sticky top-0 z-30 flex items-center justify-between gap-3 border-b border-sidebar-border bg-sidebar px-4 py-3 md:hidden">
         <Brand />
         <div className="flex items-center gap-1">
           {navItems.map((item) => (
